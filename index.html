@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+   <meta charset="utf-8">
+   <title>COMP5347 Assignment One</title>
+   <link rel="stylesheet" href="index.css" />
+   <link rel="stylesheet" href="./css/RangeSelector.css" />
+   <!-- We are deferring the script being loaded because we need the full html document to be loaded first -->
+   <script defer type="text/javascript" src="index.js"></script> 
+   <script defer type="text/javascript" src="./js/RangeSelector.js"></script> 
+</head>
+<body>
+   <div class="background-image-blur-whitewash">
+      <img src="./images/background.jpg">
+   </div>
+   <div class="titleBar">
+      <div class="titleBarContent1">
+         <p>Cartoonopia</p>
+      </div>
+      <div class="titleBarContent2">
+         <p>The home of characters and cartoons!</p>
+      </div>
+   </div>
+   <!-- Parent container for filter, search and previous comparisons --> 
+   <div class="mainParent">
+      <div class="filterBlock">
+         <p>Filters</p>
+         <hr>
+         <div class="filter-option">
+            <label for="strength">Strength</label>
+            <div class="range_container" id="strengthContainer">
+               <div class="sliders_control" id="strengthControl">
+                   <input id="fromSlider" type="range" value="20" min="0" max="100"/>
+                   <input id="toSlider" type="range" value="80" min="0" max="100"/>
+               </div>
+           </div>
+          </div>
+          <div class="filter-option">
+            <label for="speed">Speed</label>
+            <div class="range-container" id="speedContainer">
+               <div class="sliders_control" id="speedControl">
+               <input type="range" id="fromSliderSpeed" min="0" max="100" value="20">
+               <input type="range" id="toSliderSpeed" min="0" max="100" value="80">
+             </div>
+            </div>
+          </div>
+          <div class="filter-option">
+            <label for="skill">Skill</label>
+            <div class="range-container" id="skillContainer">
+               <div class="sliders_control" id="skillControl">
+               <input type="range" id="fromSliderSkill" min="0" max="100" value="20">
+               <input type="range" id="toSliderSkill" min="0" max="100" value="80">
+             </div>
+            </div>
+          </div>
+          <div class="filter-option">
+            <label for="FearF">Fear Factor</label>
+            <div class="range-container" id="fearContainer">
+               <div class="sliders_control" id="fearControl">
+               <input type="range" id="fromSliderFear" min="0" max="100" value="20">
+               <input type="range" id="toSliderFear" min="0" max="100" value="80">
+             </div>
+            </div>
+          </div>
+          <div class="filter-option">
+            <label for="power">Power</label>
+            <div class="range-container" id="powerContainer">
+               <div class="sliders_control" id="powerControl">
+               <input type="range" id="fromSliderPower" min="0" max="100" value="20">
+               <input type="range" id="toSliderPower" min="0" max="100" value="80">
+             </div>
+            </div>
+          </div>
+         <div class="filter-option">
+           <label for="intelligence">Intelligence</label>
+           <div class="range-container" id="intelligenceContainer">
+              <div class="sliders_control" id="intelligenceControl">
+              <input type="range" id="fromSliderIntelligence" min="0" max="100" value="20">
+              <input type="range" id="toSliderIntelligence" min="0" max="100" value="80">
+            </div>
+           </div>
+         </div>
+         <div class="filter-option">
+            <label for="wealth">Wealth</label>
+            <div class="range-container" id="wealthContainer">
+               <div class="sliders_control" id="wealthControl">
+               <input type="range" id="fromSliderWealth" min="0" max="100" value="20">
+               <input type="range" id="toSliderWealth" min="0" max="100" value="80">
+             </div>
+            </div>
+          </div>
+       </div>
+      <div class="attrBlock">
+         <form id="search-form">
+         <input id="search-input" type="text" placeholder="Search Characters">
+         <div id="scrollable-container">
+         <table id="character-table">
+            <tr>
+               <th class="name">Name</th>
+               <th class="strength1">Strength</th>
+               <th class="speed">Speed</th>
+               <th class="skill">Skill</th>
+               <th class="fearf">Fear Factor</th>
+               <th class="power">Power</th>
+               <th class="intelligence">Intelligence</th>
+               <th class="wealth">Wealth</th>
+               <th class="selected">Selected</th>
+            </tr>
+         </table>
+      </div>
+      </div>
+      <div class="comparison">
+         <p>Previous Comparisons</p>
+         <hr>
+         <div id="scrollable-container-comparison">
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+         <div class="comparisonOption">
+            <div class="comparisonBox"></div>
+            <div class="comparisonBox"></div>
+         </div>
+      </div>
+      </div>
+   </div>
+   <!-- Two Characters -->
+   <div class="twoCharacters">
+      <div class="character-container">
+        <div class="character-name"></div>
+        <div class="character"></div>
+      </div>
+      <div class="versus"></div>
+      <div class="character-container">
+        <div class="character-name"></div>
+        <div class="character"></div>
+      </div>
+    </div>
+   <!-- Character Feature Compare -->
+   <div class="characterFeature">
+      <div class="featureContainer left"></div>
+      <div class="featureContainer middle">
+         <p>Strength</p>
+         <p>Speed</p>
+         <p>Skill</p>
+         <p>Fear</p>
+         <p>Power</p>
+         <p>Intelligence</p>
+         <p>Wealth</p>
+      </div>
+      <div class="featureContainer right"></div>
+    </div>
+ 
+</body>
+</html>

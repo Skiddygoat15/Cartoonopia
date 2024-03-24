@@ -1,0 +1,454 @@
+.range_container {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 9px;
+}
+
+.sliders_control {
+  position: relative;
+}
+
+
+input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer;
+}
+
+input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer; 
+}
+
+input[type=range]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+
+
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #C6C6C6;
+  pointer-events: none;
+}
+
+#fromSlider {
+  height: 0;
+  z-index: 1;
+}
+
+#toSlider {
+  height: 2px;
+  z-index: 1;
+}
+
+
+
+.slider-label {
+  position: absolute;
+  color: #000;
+  text-align: center;
+  user-select: none; /* Prevent text selection */
+  pointer-events: none;
+  width: auto;
+  height: auto;
+  font-size: 12px;
+  font-weight: 500;
+}
+
+/* Speed filter */
+
+#speedContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 9px;
+}
+
+#speedControl {
+  position: relative;
+}
+
+
+#speedControl input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer;
+}
+
+#speedControl input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer; 
+}
+
+#speedControl input[type=range]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+
+
+
+#speedControl input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #C6C6C6;
+  pointer-events: none;
+}
+
+#fromSliderSpeed {
+  height: 0;
+  z-index: 1;
+}
+
+#toSliderSpeed {
+  height: 0;
+  z-index: 1;
+}
+
+ /* Skill filter */
+
+ #skillContainer {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin-right: 9px;
+}
+
+#skillControl {
+  position: relative;
+}
+
+
+#skillControl input[type=range]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer;
+}
+
+#skillControl input[type=range]::-moz-range-thumb {
+  -webkit-appearance: none;
+  pointer-events: all;
+  width: 22px;
+  height: 22px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px black;
+  cursor: pointer; 
+}
+
+#skillControl input[type=range]::-webkit-slider-thumb:hover {
+  background: #f7f7f7;
+}
+
+
+
+
+#skillControl input[type="range"] {
+  -webkit-appearance: none; 
+  appearance: none;
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  background-color: #C6C6C6;
+  pointer-events: none;
+}
+
+#fromSliderSkill {
+  height: 0;
+  z-index: 1;
+}
+
+#toSliderSkill {
+  height: 0;
+  z-index: 1;
+}
+
+
+/* FearF filter */
+
+#fearContainer {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin-right: 9px;
+}
+
+#fearControl {
+position: relative;
+}
+
+
+#fearControl input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer;
+}
+
+#fearControl input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer; 
+}
+
+#fearControl input[type=range]::-webkit-slider-thumb:hover {
+background: #f7f7f7;
+}
+
+
+
+
+#fearControl input[type="range"] {
+-webkit-appearance: none; 
+appearance: none;
+height: 2px;
+width: 100%;
+position: absolute;
+background-color: #C6C6C6;
+pointer-events: none;
+}
+
+#fromSliderFear {
+height: 0;
+z-index: 1;
+}
+
+#toSliderFear {
+height: 0;
+z-index: 1;
+}
+
+/* Power filter */
+
+#powerContainer {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin-right: 9px;
+}
+
+#powerControl {
+position: relative;
+}
+
+
+#powerControl input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer;
+}
+
+#powerControl input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer; 
+}
+
+#powerControl input[type=range]::-webkit-slider-thumb:hover {
+background: #f7f7f7;
+}
+
+
+
+
+#powerControl input[type="range"] {
+-webkit-appearance: none; 
+appearance: none;
+height: 2px;
+width: 100%;
+position: absolute;
+background-color: #C6C6C6;
+pointer-events: none;
+}
+
+#fromSliderPower {
+height: 0;
+z-index: 1;
+}
+
+#toSliderPower {
+height: 0;
+z-index: 1;
+}
+
+/* Intelligence filter */
+
+#intelligenceContainer {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin-right: 9px;
+}
+
+#intelligenceControl {
+position: relative;
+}
+
+
+#intelligenceControl input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer;
+}
+
+#intelligenceControl input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer; 
+}
+
+#intelligenceControl input[type=range]::-webkit-slider-thumb:hover {
+background: #f7f7f7;
+}
+
+
+
+
+#intelligenceControl input[type="range"] {
+-webkit-appearance: none; 
+appearance: none;
+height: 2px;
+width: 100%;
+position: absolute;
+background-color: #C6C6C6;
+pointer-events: none;
+}
+
+#fromSliderIntelligence {
+height: 0;
+z-index: 1;
+}
+
+#toSliderIntelligence {
+height: 0;
+z-index: 1;
+}
+
+
+/* Wealth filter */
+
+#wealthContainer {
+display: flex;
+flex-direction: column;
+width: 60%;
+margin-right: 9px;
+}
+
+#wealthControl {
+position: relative;
+}
+
+
+#wealthControl input[type=range]::-webkit-slider-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer;
+}
+
+#wealthControl input[type=range]::-moz-range-thumb {
+-webkit-appearance: none;
+pointer-events: all;
+width: 22px;
+height: 22px;
+background-color: #fff;
+border-radius: 50%;
+box-shadow: 0 0 0 2px black;
+cursor: pointer; 
+}
+
+#wealthControl input[type=range]::-webkit-slider-thumb:hover {
+background: #f7f7f7;
+}
+
+
+
+
+#wealthControl input[type="range"] {
+-webkit-appearance: none; 
+appearance: none;
+height: 2px;
+width: 100%;
+position: absolute;
+background-color: #C6C6C6;
+pointer-events: none;
+}
+
+#fromSliderWealth {
+height: 0;
+z-index: 1;
+}
+
+#toSliderWealth {
+height: 0;
+z-index: 1;
+}

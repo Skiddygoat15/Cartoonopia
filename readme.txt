@@ -21,3 +21,5 @@ Regarding the webpage's styling:
 2. The search results have been given a grey-white background to make the text easier to read without blending into the background image.
 
 For Screenshot Preview please see snapshots folder.
+
+PS: This is a campus project, please do not use this for your assignment submission or you may face a plagiarism investigation.

@@ -22,4 +22,4 @@ Regarding the webpage's styling:
 
 For Screenshot Preview please see snapshots folder.
 
-PS: This is a campus project, please do not use this for your assignment submission or you may face a plagiarism investigation.
+PS: This is a personal campus project, please do not use this for your assignment submission or you may face a plagiarism investigation.

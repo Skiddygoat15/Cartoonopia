@@ -19,3 +19,5 @@ Regarding the webpage's styling:
 
 1. To ensure all search results can be displayed at once, a scrollbar has been added to the right side of the search results section, with the same applied to the Previous Comparisons section.
 2. The search results have been given a grey-white background to make the text easier to read without blending into the background image.
+
+For Screenshot Preview please see snapshots folder.

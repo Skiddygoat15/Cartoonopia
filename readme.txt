@@ -1,3 +1,6 @@
+*This website needs a local Node.js server to load the Json data properly, for Node.js addon I recommend browser-sync.*
+
+
 This webpage, named Cartoonopia, will offer the following features:
 
 1. Anime Character Search Function:
